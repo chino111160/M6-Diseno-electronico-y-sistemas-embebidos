@@ -1,0 +1,17 @@
+# Altium Designer generated/output folders
+History/
+Project Logs for */
+Project Outputs for */
+__Previews/
+altium-365-sync/
+
+# Altium backup/temp files
+*.~*
+*.bak
+*.PcbDoc.Cache
+*.SchDoc.Cache
+*.OutJob.Cache
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
