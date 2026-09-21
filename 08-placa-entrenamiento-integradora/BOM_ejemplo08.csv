@@ -1,0 +1,78 @@
+﻿Ref,Componente,Valor,Footprint,Descripcion,Fabricante,MPN
+C1,Cap,10uF,C0805,Capacitor 10uF,KEMET,C0805C10610uF
+C2,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C3,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C4,Cap Pol1,47uF,RB5-10.5,Electrolitico 47 uF 16 V (polo del lazo 3.4 Hz),Panasonic,EEU-FR1C470
+C5,Cap,3.3nF,0603,Capacitor 3.3nF,KEMET,C0603C3323.3nF
+C11,Cap,10uF,C0805,Capacitor 10uF,KEMET,C0805C10610uF
+C12,Cap,22uF,C1206,Capacitor 22uF,KEMET,C1206C22622uF
+C13,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C14,Cap,1nF,0603,Capacitor 1nF,KEMET,C0603C1021nF
+C15,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C16,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C17,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C20,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C21,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C22,Cap,1uF,0603,Capacitor 1uF,KEMET,C0603C1051uF
+C23,Cap,10uF,C0805,Capacitor 10uF,KEMET,C0805C10610uF
+C24,Cap,10uF,C0805,Capacitor 10uF,KEMET,C0805C10610uF
+C30,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C31,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C32,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C33,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C34,Cap,4.7uF,C0805,Capacitor 4.7uF,KEMET,C0805C4754.7uF
+C35,Cap,1uF,0603,Capacitor 1uF,KEMET,C0603C1051uF
+C36,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C37,Cap,100nF,0603,Capacitor 100nF,KEMET,C0603C100nF
+C38,Cap,22pF,0603,Capacitor 22pF,KEMET,C0603C22022pF
+C39,Cap,22pF,0603,Capacitor 22pF,KEMET,C0603C22022pF
+D1,Diode 1N4007,,DO-41,Proteccion de polaridad inversa,Diodes Inc.,1N4007
+D2,LED1,,LED-1,LED de alimentacion (5 V),Kingbright,WP7113ID
+D3,BAT54S,,SOT-23_N,Dual Schottky series pair SOT-23 (clamp),Nexperia,BAT54S
+D5,Diode 1N4007,,DO-41,Rueda libre en paralelo con la carga,Diodes Inc.,1N4007
+D6,LED1,,LED-1,LED de alimentacion (3.3 V),Kingbright,WP7113GD
+D7,LED1,,LED-1,LED de usuario (PC13 sumidero),Kingbright,WP7113ID
+FB1,Inductor,120R@100MHz,0603,Ferrite bead VDD -> VDDA,Murata,BLM18PG121SN1D
+J1,Header 2,,HDR1X2,"Entrada 9-12 V DC: pin1 VIN, pin2 GND",Generic,Pin header 1x2 / borne
+J2,Header 6,,HDR1X6,"UART FTDI: GND, -, 3V3, RX, TX, -",Generic,Pin header 1x6 FTDI
+J3,Header 4,,HDR1X4,"I2C: GND, 3V3, SCL, SDA",Generic,Pin header 1x4
+J4,Header 2,,HDR1X2,"Entrada analogica +-200 mV: pin1 senal, pin2 GND",Generic,Pin header 1x2
+J5,Header 2,,HDR1X2,"Salida analogica 0-3.3 V: pin1 VOUT, pin2 GND",Generic,Pin header 1x2
+J6,Header 2,,HDR1X2,"Carga externa: pin1 VIN, pin2 DRAIN",Generic,Pin header 1x2 / borne
+J7,Header 5,,HDR1X5,"SWD: 3V3, SWDIO, SWCLK, GND, NRST",Generic,Pin header 1x5
+J8,Header 10,,HDR1X10,"Expansion: 3V3, GND, PA1-PA4, SPI SCK/MISO/MOSI, PA8",Generic,Pin header 1x10
+JP1,Header 2,,HDR1X2,Jumper BOOT0: cerrado = bootloader UART,Generic,Pin header 1x2
+JP2,Header 2,,HDR1X2,Jumper de separacion entre etapas,Generic,Pin header 1x2
+Q1,IRLZ44N,,TO-220AB,"N-MOSFET logic-level 55 V 47 A TO-220 (G,D,S)",Infineon,IRLZ44NPBF
+R1,Res1,1k,0603,Resistor 1k 0603,Yageo,RC0603FR-071K
+R3,Res1,1k,0603,Resistor 1k 0603,Yageo,RC0603FR-071K
+R4,Res1,6.8k,0603,Resistor 6.8k 0603,Yageo,RC0603FR-076.8K
+R5,Res1,100k,0603,Resistor 100k 0603,Yageo,RC0603FR-07100K
+R6,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R7,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R9,Res1,1k,0603,Resistor 1k 0603,Yageo,RC0603FR-071K
+R10,Res1,100,0603,Resistor 100 0603,Yageo,RC0603FR-07100
+R11,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R12A,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R13A,Res1,100,0603,Resistor 100 0603,Yageo,RC0603FR-07100
+R14,Res1,1k,0603,Resistor 1k 0603,Yageo,RC0603FR-071K
+R15,Res1,100,0603,Resistor 100 0603,Yageo,RC0603FR-07100
+R16,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R20,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R21,Res1,100,0603,Resistor 100 0603,Yageo,RC0603FR-07100
+R30,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R31,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R32,Res1,10k,0603,Resistor 10k 0603,Yageo,RC0603FR-0710K
+R33,Res1,1k,0603,Resistor 1k 0603,Yageo,RC0603FR-071K
+SW20,SW-PB,,SPST-2,Pulsador NA,Generic,Tactile 6x6
+SW30,SW-PB,,SPST-2,Reset manual,Generic,Tactile 6x6
+TP1,Plug,,PIN1,Punto de prueba VIN0,Generic,Test point
+TP2,Plug,,PIN1,Punto de prueba +5V,Generic,Test point
+TP3,Plug,,PIN1,Punto de prueba +3V3,Generic,Test point
+TP4,Plug,,PIN1,Punto de prueba GND,Generic,Test point
+U1,LM7805T,*,TO254P1011X457X1950-3,"Regulador 5 V, 1.5 A, TO-220 (necesita disipador si Vin>9 V)",STMicroelectronics,L7805CV
+U2,MCP6004,,DIP-14,"MCP6004 quad op-amp rail-to-rail 1 MHz (A-D) + power part E, PDIP-14",Microchip,MCP6004-I/P
+U3,AMS1117-3.3,,SOT223_N,LDO 3.3 V 1 A SOT-223,Advanced Monolithic Systems,AMS1117-3.3
+U4,STM32F103C8T6,,LQFP48_7x7,STM32F103C8T6 ARM Cortex-M3 72 MHz LQFP48,STMicroelectronics,STM32F103C8T6
+U10,74HC14,,DIP-14,"Hex Schmitt-trigger inverter 6 gates (A-F) + power part G (VCC=14, GND=7)",Texas Instruments,SN74HC14N
+Y1,XTAL,,R38,Cristal 8 MHz CL=20 pF,Abracon,ABL-8.000MHZ-B2

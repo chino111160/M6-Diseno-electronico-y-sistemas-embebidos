@@ -1,0 +1,8 @@
+﻿Ref,Componente,Valor,Footprint,Descripcion,Fabricante,MPN
+C1,Cap,100nF,RAD-0.3,Ceramic capacitor 100 nF (debounce),KEMET,C320C104K5R5TA
+C2,Cap,100nF,RAD-0.3,Ceramic capacitor 100 nF (decoupling of U1),KEMET,C320C104K5R5TA
+J1,Header 2,,HDR1X2,"Header 2 pin, 2.54 mm: clean output (OUT, GND)",Generic,Pin header 1x2
+J2,Header 2,,HDR1X2,"Header 2 pin, 2.54 mm: power input (VCC, GND)",Generic,Pin header 1x2
+R1,Res1,10k,AXIAL-0.3,"Resistor 10 kohm 1/4 W, pull-up",Yageo,CFR-25JB-52-10K
+SW1,SW-PB,,SPST-2,"Push button, normally open",Generic,Tactile switch 6x6
+U1,74HC14,,DIP-14,Hex Schmitt-trigger inverter (gate A used),Texas Instruments,SN74HC14N

@@ -1,0 +1,19 @@
+﻿Ref,Componente,Valor,Footprint,Descripcion,Fabricante,MPN
+C1,Cap,100nF,0603,Capacitor 100 nF 0603 (desacople VDD/VBAT),KEMET,C0603C104K5RACTU
+C2,Cap,100nF,0603,Capacitor 100 nF 0603 (desacople VDD/VBAT),KEMET,C0603C104K5RACTU
+C3,Cap,100nF,0603,Capacitor 100 nF 0603 (desacople VDD/VBAT),KEMET,C0603C104K5RACTU
+C4,Cap,100nF,0603,Capacitor 100 nF 0603 (desacople VDD/VBAT),KEMET,C0603C104K5RACTU
+C5,Cap,4.7uF,C0805,Capacitor 4.7 uF 0805 (bulk),KEMET,C0805C475K8PACTU
+C6,Cap,1uF,0603,Capacitor 1 uF 0603 (VDDA),KEMET,C0603C105K8RACTU
+C7,Cap,100nF,0603,Capacitor 100 nF 0603 (VDDA),KEMET,C0603C104K5RACTU
+C8,Cap,100nF,0603,Capacitor 100 nF 0603 (filtro NRST),KEMET,C0603C104K5RACTU
+C9,Cap,22pF,0603,Capacitor 22 pF 0603 (carga cristal),KEMET,C0603C220J5GACTU
+C10,Cap,22pF,0603,Capacitor 22 pF 0603 (carga cristal),KEMET,C0603C220J5GACTU
+FB1,Inductor,120R@100MHz,0603,Ferrite bead 120 ohm @100 MHz 0603 (VDD -> VDDA),Murata,BLM18PG121SN1D
+J1,Header 5X2,,HDR2X5,"Header 2x5 SWD: 3V3, SWDIO, SWCLK, GND, NRST",Generic,Pin header 2x5 2.54 mm
+J2,Header 2,,HDR1X2,Header 2 pin: alimentacion 3V3 y GND,Generic,Pin header 1x2
+R1,Res1,10k,0603,Resistor 10 kohm 0603 (pull-up NRST),Yageo,RC0603FR-0710KL
+R2,Res1,10k,0603,Resistor 10 kohm 0603 (pull-down BOOT0),Yageo,RC0603FR-0710KL
+SW1,SW-PB,,SPST-2,Pulsador de reset,Generic,Tactile 6x6
+U1,STM32F103C8T6,,LQFP48_7x7,"STM32F103C8T6 ARM Cortex-M3 72 MHz, 64 kB Flash, 20 kB RAM, LQFP48",STMicroelectronics,STM32F103C8T6
+Y1,XTAL,,R38,"Crystal 8 MHz, CL=20 pF",Abracon,ABL-8.000MHZ-B2

@@ -1,0 +1,13 @@
+﻿Ref,Componente,Valor,Footprint,Descripcion,Fabricante,MPN
+C1,Cap,1uF,RAD-0.3,Ceramic capacitor 1uF,KEMET,C320C105K5R5TA
+C2,Cap,10uF,RAD-0.3,Ceramic capacitor 10uF,KEMET,C320C106K3R5TA
+C3,Cap,100nF,RAD-0.3,Ceramic capacitor 100nF,KEMET,C320C104K5R5TA
+C4,Cap,1uF,RAD-0.3,Ceramic capacitor 1uF,KEMET,C320C105K5R5TA
+J1,Header 2,,HDR1X2,"Header 2 pin 2.54 mm: signal input (IN, GND)",Generic,Pin header 1x2
+J2,Header 2,,HDR1X2,"Header 2 pin 2.54 mm: signal output (OUT, GND)",Generic,Pin header 1x2
+J3,Header 2,,HDR1X2,"Header 2 pin 2.54 mm: supply input (VCC 5 V, GND)",Generic,Pin header 1x2
+R1,Res1,10k,AXIAL-0.3,Resistor 10k 1/4 W 5%,Yageo,CFR-25JB-52-10K
+R2,Res1,10k,AXIAL-0.3,Resistor 10k 1/4 W 5%,Yageo,CFR-25JB-52-10K
+R3,Res1,1k,AXIAL-0.3,Resistor 1k 1/4 W 5%,Yageo,CFR-25JB-52-1K
+R4,Res1,10k,AXIAL-0.3,Resistor 10k 1/4 W 5%,Yageo,CFR-25JB-52-10K
+U1,TL072,,SO8_N,"TL072 dual JFET op-amp (A, B) + power part C, SOIC-8",Texas Instruments,TL072CDR

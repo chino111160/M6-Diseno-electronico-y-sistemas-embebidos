@@ -50,7 +50,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Sheet2.SchDoc
+DocumentPath=Top.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -64,10 +64,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=KRNQCGMV
+DocumentUniqueId=AAAA0001
 
 [Document2]
-DocumentPath=PCB2.PcbDoc
+DocumentPath=Power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -81,10 +81,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BOWKWLGP
+DocumentUniqueId=AAAA0002
 
 [Document3]
-DocumentPath=CAMtastic4.Cam
+DocumentPath=Input.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -98,10 +98,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AAAA0003
 
 [Document4]
-DocumentPath=CAMtastic5.Cam
+DocumentPath=Analog.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -115,70 +115,142 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AAAA0004
+
+[Document5]
+DocumentPath=Driver.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AAAA0005
+
+[Document6]
+DocumentPath=Mcu.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AAAA0006
+
+[Document7]
+DocumentPath=PCB8.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AAAA0007
+
+[Document8]
+DocumentPath=PcbLib7.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AAAA0008
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\Design Rule Check - PCB2.html
+DocumentPath=Project Outputs for 08-placa-integradora\Design Rule Check - PCB8.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=..\Project Outputs for 02-filtro-rc-pasabajos\Design Rule Check - PCB2.html
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.DRR
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.EXTREP
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GBL
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GBO
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GBP
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GBS
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GM
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GM
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GTL
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GTO
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GTP
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.GTS
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.LDP
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.REP
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.REP
+DocumentPath=Project Outputs for 08-placa-integradora\PCB8.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for 02-filtro-rc-pasabajos\PCB2.TXT
+DocumentPath=Project Outputs for 08-placa-integradora\Pick Place for PCB8.csv
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for 08-placa-integradora\Pick Place for PCB8.txt
 DItemRevisionGUID=
 
 [Configuration1]
@@ -316,7 +388,7 @@ OutputDefault1=0
 [OutputGroup3]
 Name=Documentation Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Composite
 OutputName1=Composite Drawing
@@ -413,6 +485,10 @@ OutputName2=Generates pick and place files
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
+Configuration2_Name1=ForceUpdateSettings
+Configuration2_Item1=False
+Configuration2_Name2=OutputConfigurationParameter1
+Configuration2_Item2=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter= |FilterActive=False|YFlip=False|DifferentFootprints=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Published,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35,Type:0|Column#18=Name:Check_prices,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16,Type:0|Column#19=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23,Type:0|Column#20=Name:PackageDescription,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32,Type:0|Column#21=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21,Type:0|Column#22=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27,Type:0|Column#23=Name:LatestRevisionNote,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26,Type:0|Column#24=Name:Package,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31,Type:0|Column#25=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:38,Type:0|Column#26=Name:Code_JEITA,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19,Type:0|Column#27=Name:LatestRevisionDate,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25,Type:0|Column#28=Name:PackageReference,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33,Type:0|Column#29=Name:MF,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29,Type:0|Column#30=Name:Publisher,Fixed:False,Metric:False,Visible:False,Sort:None,Position:36,Type:0|Column#31=Name:SnapEDA_Link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:37,Type:0|Column#32=Name:Code_JEDEC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18,Type:0|Column#33=Name:Code_IEC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17,Type:0|Column#34=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20,Type:0|Column#35=Name:MP,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30,Type:0|Column#36=Name:DatasheetVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24,Type:0|Column#37=Name:PackageVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34,Type:0|Column#38=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22,Type:0|Column#39=Name:Manufacturer Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28,Type:0|DocumentPath=C:\Users\chino\Documents\maestria\M6_Diseno electronico y sistemas embebidos\Practicas\ejemplos\08-placa-entrenamiento-integradora\PCB8.PcbDoc
 OutputType3=Test Points For Assembly
 OutputName3=Test Point Report
 OutputDocumentPath3=
@@ -477,7 +553,7 @@ OutputDefault8=0
 Configuration8_Name1=ForceUpdateSettings
 Configuration8_Item1=False
 Configuration8_Name2=OutputConfigurationParameter1
-Configuration8_Item2=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|GenerateToolsByDrillSymbols=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=C:\Users\chino\Documents\maestria\M6_Diseno electronico y sistemas embebidos\Practicas\ejemplos\02-filtro-rc-pasabajos\PCB2.PcbDoc
+Configuration8_Item2=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|GenerateToolsByDrillSymbols=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=C:\Users\chino\Documents\maestria\M6_Diseno electronico y sistemas embebidos\Practicas\ejemplos\08-placa-entrenamiento-integradora\PCB8.PcbDoc
 OutputType9=ODB
 OutputName9=ODB++ Files
 OutputDocumentPath9=
@@ -502,7 +578,7 @@ OutputDefault12=0
 Configuration12_Name1=ForceUpdateSettings
 Configuration12_Item1=False
 Configuration12_Name2=OutputConfigurationParameter1
-Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|BoardID=BOWKWLGP|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=False|GenerateDRCRulesFile=False|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|OutputFormat=Different|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16777217~1,16842751~1,16973830~1,16973831~1,16973834~1,16973835~1,16973832~1,16973833~1|PlotBoardProfile=True|PlotBoardProfileFileName= |PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|UncheckPlotDrillDrawingLayerPair0_Backdrill=False|UncheckPlotDrillDrawingLayerPair0_Checked=False|UncheckPlotDrillDrawingLayerPair0_DrillType=Regular|UncheckPlotDrillDrawingLayerPair0_FileName= |UncheckPlotDrillDrawingLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillDrawingLayerPair0_LowLayer=Top Layer|UncheckPlotDrillGuideLayerPair0_Backdrill=False|UncheckPlotDrillGuideLayerPair0_Checked=False|UncheckPlotDrillGuideLayerPair0_DrillType=Regular|UncheckPlotDrillGuideLayerPair0_FileName= |UncheckPlotDrillGuideLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillGuideLayerPair0_LowLayer=Top Layer|DocumentPath=C:\Users\chino\Documents\maestria\M6_Diseno electronico y sistemas embebidos\Practicas\ejemplos\02-filtro-rc-pasabajos\PCB2.PcbDoc
+Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|BoardID=AAAA0007|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=False|GenerateDRCRulesFile=False|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|OutputFormat=Different|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16777217~1,16842751~1,16973830~1,16973831~1,16973834~1,16973835~1,16973832~1,16973833~1|PlotBoardProfile=True|PlotBoardProfileFileName= |PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|UncheckPlotDrillDrawingLayerPair0_Backdrill=False|UncheckPlotDrillDrawingLayerPair0_Checked=False|UncheckPlotDrillDrawingLayerPair0_DrillType=Regular|UncheckPlotDrillDrawingLayerPair0_FileName= |UncheckPlotDrillDrawingLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillDrawingLayerPair0_LowLayer=Top Layer|UncheckPlotDrillGuideLayerPair0_Backdrill=False|UncheckPlotDrillGuideLayerPair0_Checked=False|UncheckPlotDrillGuideLayerPair0_DrillType=Regular|UncheckPlotDrillGuideLayerPair0_FileName= |UncheckPlotDrillGuideLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillGuideLayerPair0_LowLayer=Top Layer|DocumentPath=C:\Users\chino\Documents\maestria\M6_Diseno electronico y sistemas embebidos\Practicas\ejemplos\08-placa-entrenamiento-integradora\PCB8.PcbDoc
 
 [OutputGroup6]
 Name=Report Outputs
@@ -914,7 +990,7 @@ Type40=1
 Type41=1
 Type42=1
 Type43=1
-Type44=1
+Type44=0
 Type45=1
 Type46=1
 Type47=1
@@ -1171,7 +1247,7 @@ CompClassManualRoomEnabled=0
 NetClassAutoBusEnabled=1
 NetClassAutoCompEnabled=0
 NetClassAutoNamedHarnessEnabled=0
-NetClassManualEnabled=1
+NetClassManualEnabled=0
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
