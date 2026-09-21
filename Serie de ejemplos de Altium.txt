@@ -1,0 +1,54 @@
+Serie de ejemplos de Altium — M6 Diseño electrónico y sistemas embebidos
+
+Ubicación en la máquina de Chinito: C:\Users\chino\Documents\maestria\M6 Diseno electronico y sistemas embebidos\ejemplos\
+
+Cada subcarpeta NN-nombre/ tiene un README.md que es la guía del ejemplo. Formato fijo de cada guía: objetivo de aprendizaje · prerrequisito · cálculos · BOM · esquema ASCII · pasos numerados en Altium · reglas de diseño · checklist de verificación · tabla de errores clásicos.
+
+Estado
+#	Ejemplo	Estado
+01	LED indicador básico	Armado en Altium por el usuario
+02	Filtro RC pasa-bajos	Armado en Altium por el usuario
+03	Fuente lineal regulada (7805 + LM317)	Guía escrita
+04	Antirrebote de pulsador	Guía escrita
+05	Acondicionador con op-amp (MCP6002)	Guía escrita
+06	Esquema jerárquico multi-hoja	Guía escrita
+07	Sistema mínimo STM32F103C8T6	Guía escrita
+08	Placa de entrenamiento integradora (capstone)	Guía escrita
+
+La serie está completa. Lo que sigue es que el usuario capture cada diseño en Altium; el acompañamiento es resolver dudas durante ese proceso.
+
+Progresión didáctica
+
+Cada ejemplo suma un concepto de diseño y una o dos herramientas nuevas de Altium. Hay que mantener esa disciplina al escribir o revisar guías.
+
+#	Concepto de diseño nuevo	Herramienta de Altium nueva
+03	Análisis térmico, ancho de pista IPC-2221, protección de polaridad	Clases de nets, prioridad de reglas, polygon pour
+04	Rebote de contactos, histéresis, pull-up vs. pull-down	Componentes multi-parte, pines ocultos, import/export de reglas (.RUL)
+05	Alimentación simple, referencia virtual, polos de acoplo, GBW	Simulación SPICE, SOIC/SMD, ActiveBOM
+06	Descomposición funcional de un diseño grande	Jerarquía, ports/sheet entries, buses, multicanal, rooms
+07	Los cinco bloques del sistema mínimo, cálculo de cristales	Layer Stack Manager, reglas según fabricante, fanout, vista 3D, Draftsman
+08	Integración: interfaces entre bloques, mapa de pines, presupuesto de potencia, particionado, bring-up, design review	Output Job, Project Releaser, variantes de ensamblaje, Show Differences
+Diseño del capstone (08) — decisiones ya tomadas
+
+Placa 100 × 80 mm, 2 capas, con seis bloques jerárquicos: POWER (7805 → AMS1117-3.3 en cascada) · MCU (STM32F103C8T6) · INPUT (4 canales de antirrebote con Repeat) · ANALOG_IN (MCP6004, G = 7.8) · ANALOG_OUT (PWM filtrado de 2º orden + buffer) · DRIVER (MOSFET logic-level).
+
+Números clave verificados:
+
+Todo el dominio del MCU corre a 3.3 V; el riel de 5 V solo alimenta expansión y la entrada del AMS1117.
+Re-escalado del bloque analógico de 5 V a 3.3 V: VREF 1.65 V, swing ±1.6 V, G = 1 + 6.8k/1k = 7.8, entrada máx 205 mV pico. Polos: 1.6 Hz (acoplo), 3.4 Hz (lazo), 7.1 kHz (anti-alias con C5 = 3.3 nF, dimensionado desde un muestreo de 20 kSa/s).
+Presupuesto: 3.3 V ≈ 110 mA; 5 V ≈ 100 mA; el 7805 carga con 210 mA → Pd = 1.28 W a 12 V de entrada → necesita disipador por encima de 9 V.
+PWM-DAC: 20 kHz, dos polos de 159 Hz → rizado 0.21 mV, por debajo de 1 LSB de 12 bits (0.81 mV); asentamiento ~10 ms; resolución ~11.8 bits.
+Mapa de pines: ADC en PA0, PWM en PB0/PB1 (deja SPI1 libre en PA5-PA7), botones en PB12-PB15 (EXTI12-15 sin conflicto), UART1 en PA9/PA10, I2C1 en PB6/PB7, LED de usuario en PC13 como sumidero.
+Otras decisiones
+Familia de MCU de referencia del 07 en adelante: STM32F103C8T6, LQFP48, programación por SWD.
+El ejemplo 03 desarrolla las dos variantes de regulador: 7805 fijo y LM317 ajustable.
+Nivel de detalle de todas las guías: el mismo que el de los ejemplos 01 y 02.
+Restricción técnica conocida
+
+Los archivos .PrjPcb, .SchDoc y .PcbDoc son binarios propietarios de Altium: no se pueden generar ni editar desde acá. El entregable de cada ejemplo es la guía en markdown; el usuario captura el diseño en Altium siguiéndola.
+
+Nota operativa: en esta máquina device_bash no puede montar las carpetas conectadas (bug de una actualización de Windows de septiembre 2026). Hay que trabajar con device_stage_files / device_commit_files.
+
+Automatización relacionada
+
+ejemplos/altium-365-sync/ — script Python para la extensión Altium Developer de VS Code que sincroniza metadata del workspace de Altium 365 a la carpeta local. Quedó pendiente montar ese flujo en Docker.

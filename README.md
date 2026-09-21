@@ -40,7 +40,7 @@ texto plano del proyecto (netlists exportados, reportes, scripts).
 | 05 | [Acondicionador de señal (op-amp)](05-acondicionador-opamp/README.md) | Diseño analógico single-supply, simulación SPICE, SMD, ActiveBOM | ✅ Guía completa |
 | 06 | [Esquema jerárquico multi-hoja](06-esquema-jerarquico/README.md) | Sheet symbols, puertos, buses, multicanal, rooms en el PCB | ✅ Guía completa |
 | 07 | [Sistema mínimo de MCU (STM32F103)](07-sistema-minimo-mcu-generico/README.md) | Desacople, reset, boot, cristales, SWD, layer stack, 3D, Draftsman | ✅ Guía completa |
-| 08 | [Placa de entrenamiento integradora](08-placa-entrenamiento-integradora/README.md) | Capstone: combina varios bloques anteriores en una sola placa | 🔜 Objetivo definido |
+| 08 | [Placa de entrenamiento integradora](08-placa-entrenamiento-integradora/README.md) | Capstone: especificación, mapa de pines, presupuesto, particionado, bring-up, design review | ✅ Guía completa |
 
 **Convención de estados**: ✅ guía completa lista · 🔜 objetivo definido, guía
 detallada pendiente de desarrollar · 🚧 en progreso · ✔️ completado por vos en Altium.
@@ -48,13 +48,15 @@ detallada pendiente de desarrollar · 🚧 en progreso · ✔️ completado por 
 ## Progreso
 
 Los ejemplos 01 y 02 ya los armaste en Altium. Las guías de los ejemplos **03
-a 07 están escritas y listas para seguir**, en orden: cada una supone que
+a 08 están escritas y listas para seguir**, en orden: cada una supone que
 hiciste las anteriores y va sumando exactamente un concepto nuevo de diseño y
 una o dos herramientas nuevas de Altium.
 
-El **08 (capstone)** queda deliberadamente sin desarrollar: es el ejercicio
-donde combinás los bloques anteriores con tus propios criterios. Cuando
-llegues ahí, lo armamos juntos según lo que necesite tu proyecto de maestría.
+El **08 es el capstone**: integra los bloques de los ejemplos 03 a 07 en una
+sola placa con STM32F103 y agrega lo que no se aprende haciendo bloques
+sueltos — especificación previa, mapa de asignación de pines, presupuesto de
+potencia, re-escalado de un bloque a otra tensión de alimentación,
+particionado del layout, procedimiento de bring-up y revisión de diseño.
 
 ### Lo nuevo que aporta cada ejemplo
 
@@ -65,6 +67,7 @@ llegues ahí, lo armamos juntos según lo que necesite tu proyecto de maestría.
 | 05 | Alimentación simple, referencia virtual, polos de acoplo, GBW | Simulación SPICE (AC sweep y transitorio), SOIC/SMD, ActiveBOM |
 | 06 | Descomposición funcional de un diseño grande | Jerarquía, ports/sheet entries, buses, multicanal, rooms |
 | 07 | Los cinco bloques del sistema mínimo, cálculo de cristales | Layer Stack Manager, reglas según el fabricante, fanout, 3D, Draftsman |
+| 08 | Integración: interfaces entre bloques, mapa de pines, presupuesto, particionado, bring-up | Output Job, Project Releaser, variantes de ensamblaje, Show Differences |
 
 ## Automatización — Altium 365 Workspace
 

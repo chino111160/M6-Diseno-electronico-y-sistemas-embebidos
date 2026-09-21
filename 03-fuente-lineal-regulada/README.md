@@ -76,11 +76,17 @@ J1.1(Vin) ──►D1──┬───────────────┬�
                   C1             C2                    C3              C4
                   │              │                     │               │
 J1.2(GND) ────────┴──────────────┴── U1.GND ───────────┴───────────────┴── J2.2(GND)
-                                                          │
-                                                         R1
-                                                          │
-                                                         D2 ── GND
 ```
+
+Rama indicadora (toma el 5V del nodo de salida, **no** del riel de GND):
+```
+U1.OUT / J2.1 (5V) ── R1(1kΩ) ── D2(LED) ── GND
+```
+
+> ⚠️ Ojo si copiás esquemas de fuentes de internet: es común encontrar el
+> LED dibujado colgando del riel de GND por error de diagramación — así
+> queda `GND → R1 → D2 → GND`, sin diferencia de potencial, y el LED
+> nunca prende. La rama **tiene que** arrancar del nodo de 5V.
 
 `D1` en serie con Vin: si conectás la alimentación al revés, el diodo
 bloquea la corriente en vez de dejar pasar corriente inversa que podría
@@ -107,7 +113,8 @@ referencia.
    defecto.
 
 ### 6. Definir reglas de ancho por clase
-1. `Design → Rules → Electrical → Width`.
+1. `Design → Rules → Routing → Width` (no está en "Electrical", aunque sea
+   una regla de tipo eléctrico — Altium la clasifica dentro de Routing).
 2. Regla por defecto: **10 mil** (aplica a "All").
 3. Nueva regla (click derecho → New Rule) que aplique solo a la clase
    **"Power"**: **25 mil** mínimo/preferido.
@@ -140,6 +147,8 @@ hace falta refrescarlo).
 ## Checklist de verificación
 
 - [ ] D1 está orientado correctamente (banda catódica hacia U1, no hacia J1).
+- [ ] La rama R1-D2 arranca del nodo de 5V (U1.OUT/J2.1), no del riel de
+      GND — si D2 mide 0V entre sus pines en el ERC/simulación, revisar esto.
 - [ ] La Net Class "Power" existe y tiene las 3 nets correctas.
 - [ ] La regla de 25 mil tiene prioridad sobre la de 10 mil (revisar en
       `Design → Rules → Priorities`).
@@ -153,9 +162,12 @@ hace falta refrescarlo).
 
 | Síntoma | Causa probable | Arreglo |
 |---|---|---|
+| D2 nunca prende (ni en el circuito real) | R1-D2 cableados entre GND y GND (sin diferencia de potencial) en vez de entre 5V y GND | Recablear la rama para que arranque en U1.OUT/J2.1 (5V), no en el riel de GND |
 | La regla de 25mil no se aplicó, las pistas de potencia quedaron en 10mil | Prioridad de reglas al revés | `Design → Rules → Priorities`, subir la regla de la clase Power |
 | DRC marca "Polygon needs repour" | El polígono no se actualizó tras mover componentes | `Tools → Polygon Pours → Re-pour All` |
 | El regulador se calienta mucho en la práctica | Corriente real mayor a la calculada, o falta disipador | Recalcular Tj con la corriente real, agregar disipador o bajar Iout |
 | ERC marca error en D1 | Diodo colocado al revés en el esquema | Verificar que el ánodo mire hacia J1 y el cátodo hacia U1 |
+| ERC (warning) marca "Net ... has no driving source" en la net de entrada | Normal — J1 es un conector Passive, Altium no sabe que ahí se enchufa una fuente externa | No es un error real, se puede ignorar; si molesta, reemplazar el Net Label VIN por un Power Port (como el de GND) |
+| DRC (antes de rutar) marca varias "Silk To Solder Mask Clearance" | El contorno de serigrafía de algunos footprints genéricos (headers, etc.) queda pegado a sus propios pads | Cosmético, no eléctrico — la mayoría de las fabricadoras lo recortan solas; se puede ignorar en un proyecto de aprendizaje |
 
 **Siguiente**: [04 — Antirrebote de pulsador](../04-antirrebote-pulsador/README.md)
